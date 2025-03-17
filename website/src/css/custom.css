@@ -1,0 +1,124 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --ifm-color-primary: #ff7700;
+  --ifm-color-primary-dark: #e66a00;
+  --ifm-color-primary-darker: #d96300;
+  --ifm-color-primary-darkest: #b35200;
+  --ifm-color-primary-light: #ff851a;
+  --ifm-color-primary-lighter: #ff8c26;
+  --ifm-color-primary-lightest: #ff9f4d;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff9f4d;
+  --ifm-color-primary-dark: #ff8f2e;
+  --ifm-color-primary-darker: #ff871f;
+  --ifm-color-primary-darkest: #f06c00;
+  --ifm-color-primary-light: #ffaf6c;
+  --ifm-color-primary-lighter: #ffb77b;
+  --ifm-color-primary-lightest: #ffd0aa;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 条状切割背景效果 */
+body {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%) -40px 0,
+    linear-gradient(225deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%) -40px 0,
+    linear-gradient(315deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%);
+  background-size: 80px 80px;
+  background-color: var(--ifm-background-color);
+}
+
+/* 菜单项样式 */
+.menu__link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* 菜单项悬停效果 */
+.menu__link:hover {
+  background-color: rgba(255, 119, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* 菜单项背景色带 */
+.menu__list-item {
+  position: relative;
+}
+
+.menu__list-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--ifm-color-primary-lightest), transparent);
+  opacity: 0.5;
+}
+
+/* 图标样式 */
+.menu__link::before {
+  content: '🔗';
+  margin-right: 8px;
+  color: var(--ifm-color-primary);
+}
+
+/* 特定类别的图标 */
+.menu__link[href*='/pharmacy/']::before {
+  content: '💊';
+}
+
+.menu__link[href*='/ebooks/']::before {
+  content: '📚';
+}
+
+.menu__link[href*='/ai-tools/']::before {
+  content: '🤖';
+}
+
+.menu__link[href*='/bt-download/']::before {
+  content: '🔍';
+}
+
+.menu__link[href*='/learning/']::before {
+  content: '🎓';
+}
+
+.menu__link[href*='/practical-nav/']::before {
+  content: '🧭';
+}
+
+/* 数字标记样式 */
+.menu__link::after {
+  content: attr(data-count);
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0.8rem;
+  background-color: var(--ifm-color-primary-lightest);
+  color: white;
+  border-radius: 10px;
+  padding: 0 6px;
+  opacity: 0.8;
+}
+
+/* 只有有数字标记的菜单项才显示数字标记 */
+.menu__link:not([data-count])::after {
+  display: none;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 996px) {
+  .menu__link::before {
+    font-size: 14px;
+  }
+}
