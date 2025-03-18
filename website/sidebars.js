@@ -11,7 +11,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Pharmacy',
-      id: 'pharmacy',
       items: [
         'pharmacy/regulatory',
         'pharmacy/journals',
@@ -21,7 +20,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Ebooks',
-      id: 'ebooks',
       items: [
         'ebooks/search-engines',
         'ebooks/online-libraries',
@@ -31,7 +29,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'AI Tools',
-      id: 'ai-tools',
       items: [
         'ai-tools/prompt-libraries',
         'ai-tools/ai-tools-list',
@@ -41,7 +38,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Torrent Search',
-      id: 'torrent-search',
       items: [
         'bt-download/search-engines',
         'bt-download/download-tools'
