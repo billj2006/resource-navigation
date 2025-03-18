@@ -16,8 +16,8 @@ const config = {
   baseUrl: '/',
 
   // 部署配置
-  organizationName: 'your-github-username', // 替换为您的GitHub用户名
-  projectName: 'resource-navigation', // 您的GitHub仓库名
+  organizationName: 'xianbai', // GitHub用户名
+  projectName: 'resource-navigation', // GitHub仓库名
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
