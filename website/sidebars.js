@@ -10,7 +10,8 @@ const sidebars = {
   resourceSidebar: [
     {
       type: 'category',
-      label: '药物警戒',
+      label: 'Pharmacy',
+      id: 'pharmacy',
       items: [
         'pharmacy/regulatory',
         'pharmacy/journals',
@@ -19,7 +20,8 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '电子书',
+      label: 'Ebooks',
+      id: 'ebooks',
       items: [
         'ebooks/search-engines',
         'ebooks/online-libraries',
@@ -28,7 +30,8 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'AI工具',
+      label: 'AI Tools',
+      id: 'ai-tools',
       items: [
         'ai-tools/prompt-libraries',
         'ai-tools/ai-tools-list',
@@ -37,7 +40,8 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'BT磁力搜索与下载',
+      label: 'Torrent Search',
+      id: 'torrent-search',
       items: [
         'bt-download/search-engines',
         'bt-download/download-tools'

@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://your-netlify-app-name.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -80,15 +80,15 @@ const config = {
             items: [
               {
                 label: '药物警戒',
-                to: '/docs/category/药物警戒',
+                to: '/docs/category/pharmacy',
               },
               {
                 label: '电子书',
-                to: '/docs/category/电子书',
+                to: '/docs/category/ebooks',
               },
               {
                 label: 'AI工具',
-                to: '/docs/category/ai工具',
+                to: '/docs/category/ai-tools',
               },
             ],
           },
