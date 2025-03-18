@@ -11,15 +11,13 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-netlify-app-name.netlify.app',
+  url: 'https://resource-navigation.netlify.app', // 这里将在Netlify部署后更新为实际URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-org', // Usually your GitHub org/user name.
-  projectName: 'resource-navigation', // Usually your repo name.
+  // 部署配置
+  organizationName: 'your-github-username', // 替换为您的GitHub用户名
+  projectName: 'resource-navigation', // 您的GitHub仓库名
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +40,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-username/your-repo/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/your-github-username/resource-navigation/tree/main/',
         },
         blog: false,
         theme: {
