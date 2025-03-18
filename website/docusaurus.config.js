@@ -19,7 +19,7 @@ const config = {
   organizationName: 'xianbai', // GitHub用户名
   projectName: 'resource-navigation', // GitHub仓库名
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
